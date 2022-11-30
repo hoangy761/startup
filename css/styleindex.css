@@ -1,0 +1,165 @@
+:root {
+    --Xam: rgb(33,33,33);
+    --green: #37FF8B;
+}
+
+body {
+    align-items: center;
+    color: var(--green);
+    background-color: rgb(41, 39, 39);
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px;
+}
+
+.nav .logo {
+    text-decoration: none;
+    margin-right: 40px;
+    color: var(--green);
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.nav .logo:hover, a:hover, .nav-task-network:hover {
+    width: 100%;
+    filter: drop-shadow(0 0 40px var(--green));
+}
+
+.nav-task {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav li {
+    list-style-type: none;
+
+}
+
+.nav li a {
+    text-decoration: none;
+    margin-right: 40px;
+    color: var(--green);
+}
+
+/* === removing default button style ===*/
+.nav-task-wallet {
+    margin-right: 80px;
+}
+
+.nav-task-wallet .button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+/* button styling */
+.nav-task-wallet .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+.nav-task-wallet .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.nav-task-wallet  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+/*--------------------------------------------------------*/
+ .swap-boder {
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px;
+
+    margin-left: 500px;
+
+}
+.swap-top {
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.swap-boder-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.swap-top .header {
+    border-radius: 8px 8px 0 0;
+    background-color: var(--Xam);
+}
+
+.papdding {
+    padding: 20px;
+}
+
+
+.percen-token ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+}
+
+.percen-token ul li {
+    padding-top: 5px;
+    align-items: center;
+    height: 27px;
+    width: 50px;
+    border-radius: 3px;
+    background-color: var(--Xam);
+
+}
+
+.swap-bottom {
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--Xam);
+    padding-top: 5px;
+    height: 24px;
+    margin: 40px;
+}
+
+.footer {
+    margin-top: 100px;
+    text-align: center;
+    background-color: var(--Xam);
+}
